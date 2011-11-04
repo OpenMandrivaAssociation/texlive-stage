@@ -44,6 +44,7 @@ a standard manuscript format for production and submission.
 %{_texmfdistdir}/tex/latex/stage/stage.cls
 %doc %{_texmfdistdir}/doc/latex/stage/README
 %doc %{_texmfdistdir}/doc/latex/stage/stage-documentation.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +55,5 @@ a standard manuscript format for production and submission.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
