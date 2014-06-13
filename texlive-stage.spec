@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-stage
 Version:	20061106
-Release:	6
+Release:	7
 Summary:	A LaTeX class for stage plays
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stage
