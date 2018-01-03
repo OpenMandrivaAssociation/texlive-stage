@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/stage
-# catalog-date 2006-11-06 12:20:58 +0100
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-stage
-Version:	20061106
-Release:	10
+Version:	1.00
+Release:	1
 Summary:	A LaTeX class for stage plays
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stage
@@ -32,9 +26,8 @@ a standard manuscript format for production and submission.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/stage/stage.cls
-%doc %{_texmfdistdir}/doc/latex/stage/README
-%doc %{_texmfdistdir}/doc/latex/stage/stage-documentation.pdf
+%{_texmfdistdir}/tex/latex/stage
+%doc %{_texmfdistdir}/doc/latex/stage
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,17 +38,3 @@ a standard manuscript format for production and submission.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061106-2
-+ Revision: 756166
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061106-1
-+ Revision: 719576
-- texlive-stage
-- texlive-stage
-- texlive-stage
-- texlive-stage
-
