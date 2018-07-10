@@ -1,6 +1,6 @@
 Name:		texlive-stage
 Version:	1.00
-Release:	1
+Release:	2
 Summary:	A LaTeX class for stage plays
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/stage
